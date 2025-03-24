@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url("image/CustLoginimg.jpg");
+     display: gride;
+}
+
+.container {
+     background-color: rgba(210, 210, 210,0.1); /* Adding some transparency to the background */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        margin-left: 350px;
+        margin-top: 100px;
+}
+td,tr
+{
+color: white;
+}
+
+.container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container table {
+    width: 100%;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #0056b3;
+     background-color: rgba(210, 210, 210,0.1);
+}
+
+.container a {
+     text-decoration: none;
+        color: #fff;
+        background-color: #5A827F;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: background-color 0.3s, border-color 0.3s;
+}
+
+.container a:hover {
+    
+    background-color: #0056b3;
+    background-color: rgba(210, 210, 210,0.1);
+}
+</style>
+<script type="text/javascript">
+function validation() 
+{
+    if(document.getElementById('uname').value=="" || document.getElementById('pword').value=="")
+    {
+        alert("Please fill in all fields.");
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body>
+<div class="container">
+        <h3>Customer Login</h3>
+        <form onsubmit="return validation()" action="customer" method="post">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="uname" id="uname" placeholder="Enter username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="pword" id="pword" placeholder="Enter password"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login"></td>
+                    <td><a href="Register.html">New Customer</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

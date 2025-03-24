@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     background-image: url("image/Admin.jpg");
+}
+a{
+   text-decoration: none;
+   border-radius: 5px;
+}
+.container {
+background-color: rgba(210, 210, 210,0.1);
+    
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #DFFF00;
+    font-size: 30px;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form a{
+    background-color: #007bff;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"],a{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+a
+{
+background-color: rgba(210, 210, 210,1.8);
+
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+a:hover {
+	background-color: #0056b3;
+}
+    
+    </style>
+</head>
+<body>
+<div class="container">
+        <h3>Admin Login</h3>
+        <form onsubmit="return validation()" action="admin123" method="post">
+            <div class="form-group">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="pword">Password:</label>
+                <input type="password" id="pword" name="pword" placeholder="Enter password">
+            </div>
+            <div class="form">
+                <button type="submit">Login</button>
+                 <a href="AdRegister.html">Register</a>
+                <a href="Home.jsp">Home</a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

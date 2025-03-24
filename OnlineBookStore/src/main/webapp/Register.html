@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        body {
+            background-image: url("image/registerimg.jpeg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-right: 700px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table tr {
+            margin-bottom: 10px;
+        }
+
+        table td {
+     
+            padding: 8px;
+        }
+        #h1{
+           margin-left: 30px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+     
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+      
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a:hover{
+        background-color: #0056b3;
+        }
+        a{
+            background-color: #007BFF;
+            margin-left:100px;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h1>Register Page</h1>
+        <form action="reg" method="post">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td>
+                        <input type="text" name="us" placeholder="Enter username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" name="pa" placeholder="Enter password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td>
+                        <input type="text" name="fn" placeholder="Enter first name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td>
+                        <input type="text" name="ln" placeholder="Enter last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gmail Id:</td>
+                    <td>
+                        <input type="text" name="mid" placeholder="Enter Gmail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>
+                        <input type="text" name="phno" placeholder="Enter mobile">
+                    </td>
+                </tr>
+                
+                <tr>
+                  <div id="reg">
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                   </div>
+                    <td>
+                        <a href="Home.jsp">Home</a>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+</body>
+</html>

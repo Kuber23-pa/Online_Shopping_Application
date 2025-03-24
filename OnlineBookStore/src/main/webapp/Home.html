@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        background-image: url("image/HomeLoginimg.png");
+        background-size: cover; /* Ensures the image covers the entire background */
+    }
+    .container {
+        background-color: rgba(210, 210, 210,0.1); /* Adding some transparency to the background */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #e44d26;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .login-link {
+        text-decoration: none;
+        color: #fff;
+        background-color: #5A827F;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .login-link:hover {
+        /*background-color: #3E635D;*/
+         background-color: rgba(210, 210, 210,0.1);
+       /* border-color: #3E635D;*/
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Our Website</h1>
+    <a class="login-link" href="AdminLogin.html">Admin Login</a>
+    <br><br><br>
+    <a class="login-link" href="CustomerLogin.html">Customer Login</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url("image/addProduct.jpeg");
+	margin-right: 60%;
+}
+
+.container {
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+	color: #e44d26;
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"] {
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	background-color: #e44d26;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #d3351e;
+}
+</style>
+</head>
+<body>
+<div class="container">
+		<form action="addproduct" method="post">
+			<h3>Product Details</h3>
+			<table>
+				<tr>
+					<td><label for="code">Product Code:</label></td>
+					<td><input type="text" id="code" name="code"
+						placeholder="enter product code" required></td>
+				</tr>
+				<tr>
+					<td><label for="name">Product Name:</label></td>
+					<td><input type="text" id="name" name="name"
+						placeholder="enter product name" required></td>
+				</tr>
+				<tr>
+					<td><label for="price">Product Price:</label></td>
+					<td><input type="text" id="price" name="price"
+						placeholder="enter product price" required><br></td>
+				</tr>
+				<tr>
+					<td><label for="qty">Product Stock:</label></td>
+					<td><input type="text" id="qty" name="qty"
+						placeholder="enter product stock" required><br></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</table>
+
+		</form>
+	</div>
+</body>
+</html>
